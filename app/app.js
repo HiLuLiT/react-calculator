@@ -1,3 +1,4 @@
+/* eslint-disable */
 import 'cssrecipes-defaults/lib/document-remove-margin-padding.css';
 import 'cssrecipes-defaults/lib/box-sizing.css';
 import 'cssrecipes-defaults/lib/hidden.css';
@@ -7,15 +8,10 @@ import './assets/styles/main.scss';
 
 import React from 'react';
 import { render } from 'react-dom';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import Root from './components/Root/Root';
+import Calculator from './components/Calculator/Calculator';
 
 render(
-  <BrowserRouter>
-    <Switch>
-      <Route exact path="/" component={Root} />
-    </Switch>
-  </BrowserRouter>,
+  <Calculator></Calculator>,
   document.querySelector('#app')
 );

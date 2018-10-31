@@ -55,21 +55,21 @@ const config = {
     }),
 
     // Lint style files
-    new StyleLintPlugin({
-      syntax: 'scss',
-      emitErrors: false
-    })
+    // new StyleLintPlugin({
+    //   syntax: 'scss',
+    //   emitErrors: false
+    // })
   ],
 
   module: {
     rules: [
       // Lint JS files (pre-loader)
-      {
-        enforce: 'pre',
-        test: /\.js$/,
-        use: ['eslint-loader'],
-        exclude
-      },
+      // {
+      //   enforce: 'pre',
+      //   test: /\.js$/,
+      //   use: ['eslint-loader'],
+      //   exclude
+      // },
 
       // Allow importing JS files, transpile using Babel
       {

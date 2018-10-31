@@ -1,10 +1,17 @@
 @import './colors';
 
-html,
-body {
-  font: 100% sans-serif;
+html {
+  box-sizing: border-box;
+} 
+
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
 }
 
 body {
-  color: $colorBodyText;
+  margin: 0;
+  font: 100 14px 'Roboto';
+  color: $black;
 }
