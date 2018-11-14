@@ -1,44 +1,62 @@
 @import '../../assets/styles/colors';
+
 .app {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+
   .calculator {
     width: 320px;
     height: 530px;
     box-shadow: 0px 0px 20px 0px #aaa;
     position: relative;
+
     .calculator-display {
       height: 130px;
       color: white;
       background: #1c191c;
       line-height: 130px;
       font-size: 6em;
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 0 20px;
+
       .auto-scaling-div {
         padding: 0 30px;
         position: absolute;
         right: 0;
       }
     }
+
     .calculator-keypad {
       display: flex;
+      & button {
+        outline: 0;
+        &:active {
+          box-shadow: inset 0px 0px 80px 0px rgba(0,0,0,0.25);
+        }
+      }
       .input-keys {
         width: 240px;
+
         .function-keys {
           & button {
             background-color: $darkGrey;
           }
         }
+
         .digit-keys {
           & button {
             background-color: $grey;
           }
         }
       }
+
       .operator-keys {
         display: flex;
         flex-direction: column;
+
         & button {
           color: white;
           background-color: $orange;
@@ -63,6 +81,7 @@
   font-size: 0.8rem;
   display: flex;
   flex-wrap: wrap-reverse;
+
   .key-0 {
     width: 160px;
     text-align: left;

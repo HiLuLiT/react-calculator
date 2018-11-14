@@ -108,9 +108,7 @@ class Calculator extends React.Component {
     return (
       
       <div className="calculator">
-        <div className="calculator-display">
-          <div className="auto-scaling-div"> {displayValue} </div>
-        </div>
+        <div className="calculator-display auto-scaling-div">{displayValue}</div>
         <div className="calculator-keypad">
           <div className="input-keys">
 
