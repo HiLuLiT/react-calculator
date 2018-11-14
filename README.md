@@ -1,6 +1,6 @@
 React Calculator
 ------------
-Mission: Develop simple calculator component using React & Apple's design.
+Mission: Develop simple calculator using React & Apple's design.
 
 Try It
 ------------
