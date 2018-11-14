@@ -26,17 +26,21 @@
         padding: 0 30px;
         position: absolute;
         right: 0;
+        transform-origin: right;
       }
     }
 
     .calculator-keypad {
       display: flex;
+
       & button {
         outline: 0;
+
         &:active {
-          box-shadow: inset 0px 0px 80px 0px rgba(0,0,0,0.25);
+          box-shadow: inset 0px 0px 80px 0px rgba(0, 0, 0, 0.25);
         }
       }
+
       .input-keys {
         width: 240px;
 
@@ -56,7 +60,9 @@
       .operator-keys {
         display: flex;
         flex-direction: column;
-
+        .calculator-key {
+          border-right: none;
+        }
         & button {
           color: white;
           background-color: $orange;
@@ -75,6 +81,7 @@
   border-right: 1px solid #666;
   border-left: none;
   border-bottom: none;
+
 }
 
 .digit-keys {
