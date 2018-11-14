@@ -1,4 +1,5 @@
-[React Calculator]
+React Calculator
+------------
 Mission: Develop simple calculator component using React & Apple's design.
 
 Try It
